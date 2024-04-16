@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %} {% block title %}S'inscrire{% endblock %} 
+{% block body %}
+  {{form_start(formulaire)}}
+    {{form_row(formulaire.firstname)}}
+    {{form_row(formulaire.lastname)}}
+    {{form_row(formulaire.password)}}
+    {{form_row(formulaire.email)}}
+    {{form_row(formulaire.image)}}
+    <button type="submit">Ajouter</button>
+  {{form_end(formulaire)}}
+{% endblock %}
